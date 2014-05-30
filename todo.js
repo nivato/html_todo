@@ -27,8 +27,16 @@ function unhover_close_button(event){
 	button.attr('src', 'close.png');
 }
 
+function add_row_on_enter(event){
+	var keyCode = (typeof event.which === 'number')? event.which: event.keyCode;
+	if (keyCode === 13){
+		add_text_row();
+	}
+}
+
 function start(){
 	$('#add-button').click(add_text_row);
+	$('#text-input').keyup(add_row_on_enter);
 }
 
 $(document).ready(start);
