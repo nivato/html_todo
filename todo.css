@@ -77,6 +77,12 @@ div {
   background: -moz-linear-gradient(top,  #FF99FF,  #FF5E9E);
 }
 
+.title, .add-bar {
+	box-shadow: 0 0 35px rgba(255, 153, 255, 1);
+	-moz-box-shadow: 0 0 35px rgba(255, 153, 255, 1);
+	-webkit-box-shadow: 0 0 35px rgba(255, 153, 255, 1);
+}
+
 .row {
   background: #FFCFE2;
   width: 600px;
@@ -90,8 +96,14 @@ div {
   color: #FF1975;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00FF99FF', endColorstr='#FFFFCFE2');
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 153, 255, 0)), to(rgba(255, 207, 226, 1)));
-  background: -moz-linear-gradient(top,  rgba(255, 153, 255, 0),  rgba(255, 207, 226, 1));
+  background: -moz-linear-gradient(top, rgba(255, 153, 255, 0), rgba(255, 207, 226, 1));
   /*background: -webkit-gradient(linear, left top, left bottom, from(#FF99FF), to(#FFCFE2));*/
+}
+
+.row:hover {
+	box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+	-moz-box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
 }
 
 .row-text {
@@ -109,9 +121,9 @@ div {
 
 .close-button:hover {
 	box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
-    -moz-box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
-    -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
+	-moz-box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+	-webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
 }
